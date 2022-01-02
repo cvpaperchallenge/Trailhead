@@ -3,7 +3,7 @@ FROM python:3.9-slim
 ENV DEBIAN_FRONTEND="noninteractive" \
     LC_ALL="C.UTF-8" \
     LANG="C.UTF-8" \
-    PYTHONPATH="/home/xccv/code/"
+    PYTHONPATH="/code/" 
 
 # `graphviz` is needed to create figure.
 # `fonts-wqy-zenhei` is needed to visualize Japanese inside of figure.
@@ -14,9 +14,14 @@ RUN apt update \
     make \
     plantuml
 
-RUN pip3 install poetry
+# `furo` is theme of sphinx
+RUN pip3 install \
+    furo \
+    livereload \
+    sphinx
 
 RUN useradd -ms /bin/sh xccv
 USER xccv
 
-WORKDIR /home/xccv/code
+WORKDIR /code/docs
+ENTRYPOINT make html && python3 livehtml.py
