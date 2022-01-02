@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "trailhead-docs"
+name = "xccv_trailhead"
 version = "0.1.0"
 description = ""
 authors = ["cvpaper.challenge xccv group"]
