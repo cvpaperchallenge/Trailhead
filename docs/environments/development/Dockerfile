@@ -16,8 +16,12 @@ RUN apt update \
 
 # `furo` is theme of sphinx
 RUN pip3 install \
+    black \
+    flake8 \
     furo \
+    isort \
     livereload \
+    mypy \
     sphinx
 
 RUN useradd -ms /bin/sh xccv
