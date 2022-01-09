@@ -11,8 +11,7 @@ RUN apt update \
     && apt install --no-install-recommends -y \
     fonts-wqy-zenhei \
     graphviz \
-    make \
-    plantuml
+    make
 
 # `furo` is theme of sphinx
 RUN pip3 install \
