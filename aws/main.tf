@@ -44,3 +44,7 @@ resource "aws_s3_bucket" "xccv-trailhead-terraform-backend" {
         enabled = true
     }
 }
+
+module "docs" {
+    source = "./docs"
+}
