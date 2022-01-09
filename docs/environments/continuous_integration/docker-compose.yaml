@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  docs:
+    build:
+      context: ../../
+      dockerfile: environments/development/Dockerfile
+    command: make html
+    ports:
+      - "8000:8000"
+    restart: always
+    tty: true
+    user: 1000:1000
+    volumes:
+      - ../../../docs:/code
