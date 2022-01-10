@@ -1,6 +1,11 @@
 # Trailhead
 
-## Docs
+## What is Trailhead?
+TBD
+
+- [**Docs**](https://d3kt8ejlbkqt6k.cloudfront.net/index.html)
+
+## [Docs](https://d3kt8ejlbkqt6k.cloudfront.net/index.html)
 
 - To build docs at your local PC, please run following. You can access to the docs from `http://0.0.0.0:8000`. If you edit the files at `docs/docs/source`, the docs is automatically rebuilt by `livehtml` and you can see the live feedback.
 
@@ -21,4 +26,5 @@ In order to run CI, following secrets have to be set from github setting page.
 
 ### Workflows
 
+- **build_docs**: Build trailhead docs.
 - **deploy_docs**: Build trailhead docs and deploy to AWS S3.
