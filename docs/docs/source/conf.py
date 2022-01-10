@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'XCCV Trailhead'
-copyright = '2022, cvpaper.challenge xccv group'
-author = 'cvpaper.challenge xccv group'
+copyright = '2022, cvpaper.challenge XCCV Group'
+author = 'cvpaper.challenge XCCV Group GL Yoshihiro Fukuhara'
 
 # The full version, including alpha/beta/rc tags
 release = '0.1.0'
@@ -56,6 +56,8 @@ exclude_patterns = []
 #
 html_theme = 'furo'
 html_title = 'XCCV Trailhead'
+html_logo = './asset/logo.png'
+html_search_language = 'ja'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
