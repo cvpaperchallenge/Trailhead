@@ -1,4 +1,6 @@
 # Trailhead
+[![build docs](https://github.com/cvpaperchallenge/Trailhead/actions/workflows/build_docs.yaml/badge.svg)](https://github.com/cvpaperchallenge/Trailhead/actions/workflows/build_docs.yaml)
+[![deploy docs](https://github.com/cvpaperchallenge/Trailhead/actions/workflows/deploy_docs.yaml/badge.svg)](https://github.com/cvpaperchallenge/Trailhead/actions/workflows/deploy_docs.yaml)
 
 ## What is Trailhead?
 TBD
