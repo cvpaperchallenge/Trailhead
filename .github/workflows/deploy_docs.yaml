@@ -22,7 +22,7 @@ jobs:
     # sphinx try to create directory under DOCS_DIRECTORY.
     # chmod is needed to resolve permission error.
     - name: add permission
-      run: chmod 777 ${{ DOCS_DIRECTORY }}
+      run: chmod 777 ${{ env.DOCS_DIRECTORY }}
 
     - name: build docker
       run: docker-compose build --parallel docs
