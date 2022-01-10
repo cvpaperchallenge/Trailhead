@@ -3,18 +3,29 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+================================
 Trailhead toward the challenge
-==========================================
+================================
 
+
+調査・テーマ設定
+================================
+TBD
+
+
+実装・実験
+================================
+TBD
+
+
+執筆・投稿
+================================
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
+
+   writing_submission/internal_review.rst
 
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+リバッタル・発表準備
+================================
+TBD
