@@ -5,6 +5,7 @@ on: [pull_request]
 env:
   DOCKER_COMPOSE_DIRECTORY: docs/environments/continuous_integration
   DOCS_BUILT_HTML_DIRECTORY: docs/docs/_build/html
+  DOCS_DIRECTORY: docs/docs
   S3_BUCKET: s3://xccv-trailhead-docs
 
 jobs:
@@ -18,14 +19,17 @@ jobs:
     - name: show info
       run: pwd && docker-compose --version && docker --version
 
+    # sphinx try to create directory under DOCS_DIRECTORY.
+    # chmod is needed to resolve permission error.
+    - name: add permission
+      run: chmod 777 ${{ DOCS_DIRECTORY }}
+
     - name: build docker
       run: docker-compose build --parallel docs
       working-directory: ${{ env.DOCKER_COMPOSE_DIRECTORY }}
     - name: run docker
       run: docker-compose up docs
       working-directory: ${{ env.DOCKER_COMPOSE_DIRECTORY }}
-    - name: Wait 15 seconds so that container is up and running
-      run: sleep 15
 
     - run: ls ${{ env.DOCKER_COMPOSE_DIRECTORY }}
     - run: ls .
