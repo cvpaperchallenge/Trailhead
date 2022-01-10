@@ -1,0 +1,30 @@
+name: DEPLOY_DOCS
+
+on: [pull_request]
+
+env:
+  DOCKER_COMPOSE_DIRECTORY: docs/environments/continuous_integration
+  DOCS_DIRECTORY: docs/docs
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+    - name: checkout
+      uses: actions/checkout@v2
+
+    - name: show info
+      run: pwd && docker-compose --version && docker --version
+
+    # sphinx try to create directory under DOCS_DIRECTORY.
+    # chmod is needed to resolve permission error.
+    - name: add permission
+      run: chmod 777 ${{ env.DOCS_DIRECTORY }}
+
+    - name: build docker
+      run: docker-compose build --parallel docs
+      working-directory: ${{ env.DOCKER_COMPOSE_DIRECTORY }}
+    - name: run docker
+      run: docker-compose up docs
+      working-directory: ${{ env.DOCKER_COMPOSE_DIRECTORY }}

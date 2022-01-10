@@ -27,4 +27,4 @@ RUN useradd -ms /bin/sh xccv
 USER xccv
 
 WORKDIR /code/docs
-ENTRYPOINT make html && python3 livehtml.py
+CMD make html && python3 livehtml.py
