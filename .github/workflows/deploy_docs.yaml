@@ -27,6 +27,11 @@ jobs:
     - name: Wait 15 seconds so that container is up and running
       run: sleep 15
 
+    - run: ls .
+    - run: ls docs
+    - run: ls docs/docs
+    - run: ls docs/docs/_build
+
     - name: deploy to AWS S3 
       run: aws s3 cp --recursive --region ap-northeast-1 ${{ env.DOCS_BUILT_HTML_DIRECTORY }} ${{ env.S3_BUCKET }}
       env:
