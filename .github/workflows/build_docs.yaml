@@ -1,4 +1,4 @@
-name: DEPLOY_DOCS
+name: build docs
 
 on: [pull_request]
 
