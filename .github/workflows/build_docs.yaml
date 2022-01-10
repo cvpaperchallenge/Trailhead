@@ -1,9 +1,6 @@
 name: DEPLOY_DOCS
 
-on:
-  push:
-    branches:
-      - master
+on: [pull_request]
 
 env:
   DOCKER_COMPOSE_DIRECTORY: docs/environments/continuous_integration
@@ -39,4 +36,3 @@ jobs:
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.XCCV_ADMIN_AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.XCCV_ADMIN_AWS_SECRET_ACCESS_KEY_ID }}
-
