@@ -76,3 +76,12 @@ After submission
 -   **Rebuttal** （リバッタル）:
 
     | Through the linking to the PRMU RMP, a support for rebuttal is provided.
+
+Important Dates
+================================
+
+**2022/04/01**: Conference Simulation Paper Submission Form Opened
+
+**2022/04/21**: Conference Simulation Paper Registration Deadline
+
+**2022/04/28**: Conference Simulation Paper Submission Deadline & Meta-Survery Submission Deadline 
