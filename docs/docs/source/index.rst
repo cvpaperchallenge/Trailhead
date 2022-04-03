@@ -19,7 +19,10 @@ Research Process
 
 調査・テーマ設定
 --------------------------------
-TBD
+.. toctree::
+   :maxdepth: 1
+
+   survey_ideation/conference_simulation.rst
 
 
 実装・実験
@@ -38,3 +41,6 @@ TBD
 リバッタル・発表準備
 --------------------------------
 TBD
+
+Tools
+================================

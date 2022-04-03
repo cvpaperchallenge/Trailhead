@@ -3,18 +3,26 @@
 [![deploy docs](https://github.com/cvpaperchallenge/Trailhead/actions/workflows/deploy_docs.yaml/badge.svg)](https://github.com/cvpaperchallenge/Trailhead/actions/workflows/deploy_docs.yaml)
 
 ## What is Trailhead?
-TBD
 
-- [**Docs**](https://d3kt8ejlbkqt6k.cloudfront.net/index.html)
+Trailhead is a documentation for challengers in the [cvpaper.challenge](http://xpaperchallenge.org/cv/) communitiy.
+The purpose of this document is to share the research flow in the cvpaper.challenge community and accumulate useful knowledge for research.
+Trailhead is publically accessible from [this link](https://d3kt8ejlbkqt6k.cloudfront.net/index.html).
 
-## [Docs](https://d3kt8ejlbkqt6k.cloudfront.net/index.html)
 
-- To build docs at your local PC, please run following. You can access to the docs from `http://0.0.0.0:8000`. If you edit the files at `docs/docs/source`, the docs is automatically rebuilt by `livehtml` and you can see the live feedback.
+## Build locally
+
+To build docs at your local PC, please run following. You can access to the docs from `http://0.0.0.0:8000`. If you edit the files at `docs/docs/source`, the docs is automatically rebuilt by `livehtml` and you can see the live feedback.
 
 ```bash
 $ cd docs/environments/develop
 $ sudo docker-compose up
 ```
+
+## How to contribute
+
+If you want to contribute to Trailhead, please feel free to create Pull Request.
+
+IMPORTANT: Please **don't** push your update to **master branch**.
 
 ## Github Actions
 
